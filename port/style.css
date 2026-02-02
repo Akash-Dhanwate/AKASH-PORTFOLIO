@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#tsparticles {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    z-index: 0; /* Background layer */
+    pointer-events: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: rgba(5, 8, 22, 0.8);
+    backdrop-filter: blur(10px);
+}
+.nav-btn{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0px 12px 0px 12px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+    color:#000000;
+}
+
+.logo { font-weight: 800; font-size: 1.4rem; color: white; }
+
+.hero-section {
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+
+}
+
+/* GRADIENT TEXT ANIMATION */
+.animated-gradient {
+    background: linear-gradient(
+        to right, 
+        #ff0099a3, #1b32ff, #00b3ff, #8000ff, #ff0077, #ff0099a3
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-flow 4s linear infinite;
+}
+
+@keyframes gradient-flow {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+.hero-name {
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-size: 4rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.social-btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.linkedin { background:linear-gradient(45deg, #1d00bf, #0084ff, #000000, #5f50cb, #000000); }
+.instagram { background: linear-gradient(45deg, #894700, #e6683c, #8d0216, #cc2366, #340023); }
+.github { background: linear-gradient(45deg, #4f33f0, #002a50, #000000, #10008c, #000000); }
+
+.btn:hover { transform: scale(1.1); }
+
+.Projects-info{
+    width: 100%;
+    height: 100vh;
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+
+}
+.info-text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 5vw;
+}
+.Projects-info div , img{
+    margin:10px 50px 10px 50px;
+    border-radius: 20px;
+
+
+}
