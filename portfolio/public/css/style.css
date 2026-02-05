@@ -44,7 +44,7 @@ body {
 .logo {
   font-weight: bold;
   font-size: 2.2rem;
-  font-family: "Bilgen" ;
+  font-family: "Autography" ;
   gap: 6px;
 }
 
@@ -90,14 +90,14 @@ body {
 }
 
 .hero-title {
-  font-size: 10.2rem;
+  font-size: 5.2rem;
   font-weight: 900;
    background: linear-gradient(90deg, #ffffff , #818cf8 , #ffffff);
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientMove 4s infinite linear, slideUp 1.2s ease;
-  font-family: "Bebas";
+  font-family: "DevilCandle";
   text-transform: uppercase;
 }
 .hero-subtitle {
@@ -167,6 +167,7 @@ body {
     display: inline-block;
     align-items: center;
     gap: 10px;
+    margin: 10px;
     color: white;
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -457,6 +458,8 @@ footer {
 }
 
 
+
+
 @media (max-width: 768px) {
   .cursor-glow {
     display: none;
@@ -486,4 +489,143 @@ footer {
   opacity: 1;
   transition: opacity 0.3s ease;
   z-index: 999;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+/* Header */
+.header {
+  padding: 1rem;
+}
+
+/* Navigation */
+.nav-links {
+  width: 100%;
+  right: 0;
+  top: 70px;
+  border-radius: 0;
+}
+
+/* Tag Line */
+.tag-line {
+  margin: 80px 20px;
+  font-size: 0.8rem;
+}
+
+/* HERO SECTION */
+.hero {
+  grid-template-columns: 1fr;
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+/* Hero Title */
+.hero-title {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+  font-size: 0.9rem;
+}
+
+/* Hero Buttons */
+.hero-actions {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Blob Visuals */
+.hero-visual {
+  height: 300px;
+  margin-top: 2rem;
+}
+
+.blob-1,
+.blob-2,
+.blob-3 {
+  transform: scale(0.7);
+}
+
+/* Section Padding */
+.section {
+  padding: 4rem 1.2rem;
+}
+
+/* About / Skills / Projects Headings */
+#about h2,
+#skills h2,
+#projects h2,
+#contact h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Skills Text */
+#skills span {
+  font-size: 1.2rem;
+}
+
+/* Project Cards */
+.project-card {
+  padding: 1rem;
+}
+
+/* Project Images */
+.h-img {
+  width: 100%;
+  height: 180px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 18px;
+  font-size: 0.85rem;
+}
+
+/* Contact Form */
+form {
+  width: 100%;
+}
+
+input,
+textarea {
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.8rem;
+}
+
+}
+
+
+/* ================= EXTRA SMALL DEVICES ================= */
+
+@media (max-width: 480px) {
+
+.hero-title {
+  font-size: 2.2rem;
+}
+
+.tag-line {
+  margin: 100px 15px;
+  font-size: 0.7rem;
+}
+
+#about h2,
+#skills h2,
+#projects h2,
+#contact h2 {
+  font-size: 2.2rem;
+}
+
+.hero-visual {
+  height: 250px;
+}
+
 }
