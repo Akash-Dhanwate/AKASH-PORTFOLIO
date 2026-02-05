@@ -13,3 +13,27 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Autography";
+  src: url("../fonts/Autography.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "mmmm";
+  src: url("../fonts/mmmm.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DevilCandle";
+  src: url("../fonts/DevilCandle_PERSONAL_USE_ONLY.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
